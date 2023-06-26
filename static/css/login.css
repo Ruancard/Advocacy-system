@@ -1,0 +1,61 @@
+body{
+     background-color: #646679;
+     font-size:xx-large;
+     text-transform: uppercase;
+}
+
+main{
+     margin: auto;
+     display: flex; 
+     height: 100vh;
+     flex-direction: column;
+     
+}
+.menu{
+     width: 30vw;
+     height: 50vh;
+     padding: 30px;
+     gap: 5vh;
+     margin: auto;
+     border-radius: 10px;
+     display: flex; 
+     flex-direction: column;
+     background-color: #2d315c;
+}
+
+.menu div{
+     display: flex; 
+     flex-direction: column;
+     gap: 2vh;
+}
+
+input{
+     max-width: 50%;
+     background-color: #646679;
+     padding: 10px;
+     border-radius: 20px;
+     border: 0;
+}
+
+button{
+     font-size:xx-large;
+     text-transform: uppercase;
+     margin-inline: auto;
+     width: 50%;
+     border-radius: 10px;
+     background-color: #646679;
+     padding: 10px;
+}
+
+.menu a{
+     text-decoration: underline;
+     color: cornflowerblue;
+     font-size: medium;
+     margin-inline: auto;
+}
+
+.menu p{
+     text-decoration: underline;
+     font-size: medium;
+     color: rgb(223, 69, 69);
+}

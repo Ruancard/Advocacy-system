@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<table class="main-table">
+     <tr>
+          <td>Numero do processo</td>
+          <td>Nome do processo</td>
+          <td>requerente</td>
+          <td>Réu</td>
+          <td>Advogado de acusação</td>
+          <td>advogado de defesa</td>
+          <td>Juiz</td>
+          <td>vara</td>
+          <td>Inicio do processo</td>
+          <td>Ultima alteração</td>
+          <td>Editar</td>
+     </tr>
+     {% for processo in processos %}
+          <tr>
+               <td><a href="">{{ processo.numero }}</a></td>
+               <td><a href="">{{ processo.nome }}</a></td>
+               <td><a href="">{{ processo.requerente }}</a></td>
+               <td><a href="">{{ processo.reu }}</a></td>
+               <td><a href="">{{ processo.acusacao }}</a></td>
+               <td><a href="">{{ processo.defesa }}</a></td>
+               <td><a href="">{{ processo.juiz }}</a></td>
+               <td><a href="">{{ processo.vara }}</a></td>
+               <td><a href="">{{ processo.dt_inicio['day'] }}/{{ processo.dt_inicio['month'] }}/{{ processo.dt_inicio['year'] }}</a></td>
+               <td><a href="">{{ processo.dt_att['day'] }}/{{ processo.dt_att['month'] }}/{{ processo.dt_att['year'] }}</a></td>
+               <td><a href=""><i class="fa-solid fa-pen"></i></a></a></td>
+          </tr>
+     
+          {% else %}
+          <tr>
+               <td>nenhum processo disponivel</td>   
+          </tr>
+
+     {% endfor %}
+</table>
+{% endblock %}

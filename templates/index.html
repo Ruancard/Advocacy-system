@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/static/css/reset.css">
+     <link rel="stylesheet" href="/static/css/teste.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <link rel="stylesheet" href="index.js">
+     <title>Document</title>
+</head>
+<body>
+     <nav class="menu">
+          <div class="icones nav-div">
+               <div>
+               <a href="#"><i class="fa-solid fa-file"></i></a>
+               <a href="#"><i class="fa fa-suitcase"></i></a>
+               <a href="#"><i class="fa fa-user"></i></a>
+               <a href="#"><i class="fa-solid fa-file-import"></i></a>
+               </div>
+               <div>
+                    <a href="#"><i class="fa-solid fa-id-card"></i></a>
+                    <a href="/logout"><i class="fa fa-sign-out"></i></a>
+               </div>
+          </div>
+          <div class="texto nav-div">
+               <div>
+                    <a href="#"><h1>Todos Os Processos</h1></a>
+                    <a href="#"><h1>Advogados</h1></a>
+                    <a href="#"><h1>Clientes</h1></a>
+                    <a href="#"><h1>Adicionar processo</h1></a>
+               </div>
+               <div>
+                    <a href="#"><h1>Sua Conta</h1></a>
+                    <a href="/logout"><h1>Sair da Conta</h1></a>
+               </div>
+          </div>
+          
+          
+          
+          <a href="#"></a>
+     </nav>
+     <main class="index-main">
+          {% block content %} {% endblock %}
+     </main>
+
+     <script src="/static/js/index.js"></script>
+</body>
+</html>
